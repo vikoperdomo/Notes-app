@@ -1,0 +1,46 @@
+Access key ID AKIAJ4NP7RCC4JGLK3VA
+Secret access key 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 
+
+AWS_PROFILE=vperdomo-otf serverless invoke local --function create --path mocks/create-event.json
+
+AWS_PROFILE=vperdomo-otf serverless invoke local --function create --path mocks/create-event.json
+
+AWS_PROFILE=vperdomo-otf serverless invoke local --function get --path mocks/get-event.json
+
+AWAWS_PROFILE=vperdomo-otf serverless invoke local --function update --path mocks/update-event.json
+AWS_PROFILE=vperdomo-otf serverless invoke local --function delete --path mocks/delete-event.json
+
+Deploy all process micoreServices
+serverless deploy --aws-profile vperdomo-otf
+
+Deploy one micoreService with lambda function on it
+serverless deploy function -f list --aws-profile vperdomo-otf
+
+
+User Pool 
+Pool Id us-east-1_WLM5nYbwZ
+
+
+USER Pool
+
+App client id  12jc1lv3c4spgqk5sjgvpg0n2
+
+
+Identity Pool ID: us-east-1:88e8ebea-2807-46e3-a2ac-870d06210aa5
+
+aws cognito-idp admin-confirm-sign-up \
+  --region us-east-1 \
+  --user-pool-id us-east-1_WLM5nYbwZ \
+  --username admin@example.com
+  
+
+aws cognito-idp admin-confirm-sign-up \
+  --region us-east-1 \
+  --user-pool-id  \
+  --username admin@example.com
+
+
+aws cognito-idp admin-confirm-sign-up \
+  --region us-east-1 \
+  --user-pool-id us-east-1_WLM5nYbwZ \
+  --username admin@example.com
